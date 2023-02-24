@@ -1,6 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Skill from "./Skill";
+import ReactSkill from "./ReactSkill";
+import TypeScriptSkill from "./TypeScriptSkill";
+import NextjsSkill from "./NextjsSkill";
+import TailwindcssSkill from "./TailwindcssSkill";
+import PythonSkill from "./PythonSkill";
+import NodeSkill from "./NodeSkill";
+import MysqlSkill from "./MysqlSkill";
+import FirebaseSkill from "./FirebaseSkill";
+import HtmlSkill from "./HTMLSkill";
+import CssSkill from "./CssSkill";
+import JavaScriptSkill from "./JavaScriptSkill";
+import VscodeSkill from "./VscodeSkill";
 
 type Props = {};
 
@@ -26,17 +37,19 @@ export default function Skills({}: Props) {
         Hover over a skill for currency profiency
       </h3>
 
-      <div className="grid grid-cols-4 gap-5">
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
-        <Skill />
+      <div className="grid grid-cols-4 gap-6 max-sm:gap-4">
+        <ReactSkill />
+        <NextjsSkill />
+        <TypeScriptSkill />
+        <JavaScriptSkill />
+        <TailwindcssSkill />
+        <PythonSkill />
+        <HtmlSkill />
+        <CssSkill />
+        <NodeSkill />
+        <MysqlSkill />
+        <FirebaseSkill />
+        <VscodeSkill />
       </div>
     </motion.div>
   );

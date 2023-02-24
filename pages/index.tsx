@@ -10,7 +10,7 @@ export default function Home() {
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scroll-smooth">
       <Head>
         <title>Hyung-Jin Han&apos;s Portfolio</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/AREmoji/AREmojiPic3.png" />
       </Head>
 
       <Header />
