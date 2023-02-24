@@ -28,15 +28,15 @@ export default function Header({}: Props) {
         className="flex flex-row items-center pt-3"
       >
         <Link href="https://www.facebook.com/hyeongjinh1" target="_blank">
-          <GrFacebookOption className="cursor-pointer text-gray-400 hover:text-[#37b3ed] mx-3 w-7 h-7 transition-all duration-300 ease-in-out" />
+          <GrFacebookOption className="headerIcon" />
         </Link>
 
         <Link href="https://linkedin.com/in/hyungjinhan" target="_blank">
-          <GrLinkedinOption className="cursor-pointer text-gray-400 hover:text-[#37b3ed] mx-3 w-7 h-7 transition-all duration-300 ease-in-out" />
+          <GrLinkedinOption className="headerIcon" />
         </Link>
 
         <Link href="https://github.com/HyungJinHan" target="_blank">
-          <GrGithub className="cursor-pointer text-gray-400 hover:text-[#37b3ed] mx-3 w-7 h-7 transition-all duration-300 ease-in-out" />
+          <GrGithub className="headerIcon" />
         </Link>
       </motion.div>
 
