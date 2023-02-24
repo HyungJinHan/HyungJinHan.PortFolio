@@ -27,7 +27,7 @@ export default function Skills({}: Props) {
       transition={{
         duration: 1.5,
       }}
-      className="flex relative flex-col text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
+      className="flex relative flex-col text-center md:text-left xl:flex-row xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
     >
       <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
         Skills
@@ -37,7 +37,7 @@ export default function Skills({}: Props) {
         Hover over a skill for currency profiency
       </h3>
 
-      <div className="grid grid-cols-4 gap-6 max-sm:gap-4">
+      <div className="grid grid-cols-4 gap-12 max-sm:gap-4 pt-10">
         <ReactSkill />
         <NextjsSkill />
         <TypeScriptSkill />
