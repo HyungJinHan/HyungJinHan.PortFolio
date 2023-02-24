@@ -49,11 +49,11 @@ export default function ExperienceCardDrone({}: Props) {
           />
         </div>
 
-        <p className="uppercase py-5 text-gray-600 font-semibold">
+        <div className="uppercase py-5 text-gray-600 font-semibold">
           <p className="border border-white bg-white inline-block px-2 rounded-md">
             2020.03 - 2022.01 (총 1년 11개월)
           </p>
-        </p>
+        </div>
 
         <ul className="list-disc space-y-4 ml-5 text-base">
           <li>자격증 반 교육 교관</li>
