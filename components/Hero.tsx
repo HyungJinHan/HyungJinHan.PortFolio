@@ -8,17 +8,21 @@ type Props = {};
 
 export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["I'm Front-End Developer (*ˊᵕˋ*)ﾉ", "Please enjoy my Portfolio :)"],
+    words: [
+      "I'm Front-End Developer (･`◡´･)ゝ",
+      "Please enjoy my Portfolio :)",
+    ],
     loop: true,
     delaySpeed: 500,
   });
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="h-screen flex flex-col items-center justify-center text-center overflow-hidden scroll-smooth">
       <BackGroundShapes />
       <img
-        className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="/selfie.jpeg"
+        className="relative h-64 w-64 mx-auto pb-10 object-cover"
+        // src="/selfie.jpeg"
+        src="/favicon.png"
         alt="selfie"
       />
       <div className="z-20">
