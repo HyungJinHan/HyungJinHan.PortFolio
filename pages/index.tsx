@@ -7,7 +7,7 @@ import Skills from "@/components/skills/Skills";
 
 export default function Home() {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scroll-smooth">
+    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 scroll-smooth selection:bg-none selection:text-[#37b3ed]">
       <Head>
         <title>Hyung-Jin Han&apos;s Portfolio</title>
         <link rel="icon" href="/AREmoji/AREmojiPic3.png" />

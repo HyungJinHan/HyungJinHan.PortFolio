@@ -78,7 +78,7 @@ export default function Header({}: Props) {
         </CopyToClipboard>
 
         <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-          Click to Copy!
+          Click to Copy
         </p>
       </motion.div>
     </header>
