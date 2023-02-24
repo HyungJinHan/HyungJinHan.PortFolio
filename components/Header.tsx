@@ -61,8 +61,8 @@ export default function Header({}: Props) {
           gutter={10}
           toastOptions={{
             style: {
-              background: "#37b3ed",
-              color: "white",
+              background: "white",
+              color: "#37b3ed",
               fontWeight: "bold",
             },
             success: {

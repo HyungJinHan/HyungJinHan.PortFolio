@@ -22,7 +22,7 @@ export default function Hero({}: Props) {
       <img
         className="relative h-64 w-64 mx-auto pb-10 object-cover"
         // src="/selfie.jpeg"
-        src="/favicon.png"
+        src="/AREmoji/AREmojiPic3.png"
         alt="selfie"
       />
       <div className="z-20">
@@ -30,15 +30,14 @@ export default function Hero({}: Props) {
           Hyung-Jin Han
         </h2>
 
-        <h1 className="text-3xl lg:text-5xl font-semibold px-10">
-          {/* <span className="mr-3">Hi! I&apos;m&nbsp;{text}</span> */}
+        <h1 className="text-3xl lg:text-5xl font-semibold px-10 max-sm:text-xl">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#37b3ed" />
         </h1>
 
-        <div className="pt-5">
+        <div className="pt-5 max-sm:mx-10">
           <Link href="#about">
-            <button className="heroButton">About</button>
+            <button className="heroButton max-sm:mb-3">About</button>
           </Link>
 
           <Link href="#experience">
