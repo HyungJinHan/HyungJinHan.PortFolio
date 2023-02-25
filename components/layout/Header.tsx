@@ -85,10 +85,20 @@ export default function Header({}: Props) {
         >
           <FiMail className="cursor-pointer text-gray-400 hover:text-[#37b3ed] mr-3 w-7 h-7 transition-all duration-300 ease-in-out" />
         </CopyToClipboard>
-
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-          Click to Copy
-        </p>
+        <Link href="#contact">
+          <CopyToClipboard
+            text="han1210_36@naver.com"
+            onCopy={() =>
+              toast.success("Email Copied to Clipboard!", {
+                icon: "📋",
+              })
+            }
+          >
+            <p className="uppercase hidden md:inline-flex text-sm text-gray-400 hover:text-[#37b3ed] transition-all duration-300 ease-in-out">
+              Contact Me
+            </p>
+          </CopyToClipboard>
+        </Link>
       </motion.div>
     </header>
   );

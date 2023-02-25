@@ -22,7 +22,7 @@ export default function About({}: Props) {
       </h3>
 
       <motion.img
-        src="/AREmoji/AREmojiGif1.gif"
+        src="/AREmoji/AREmojiGif4.gif"
         initial={{
           x: -200,
           opacity: 0,

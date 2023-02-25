@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Header from "@/components/layout/Header";
 import Hero from "@/components/hero/Hero";
@@ -6,6 +7,7 @@ import Experience from "@/components/experience/Experience";
 import Skills from "@/components/skills/Skills";
 import Projects from "@/components/project/Projects";
 import ContactMe from "@/components/contactMe/ContactMe";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -40,6 +42,18 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <ContactMe />
       </section>
+
+      <Link href="#hero">
+        <footer className="sticky bottom-5 w-full">
+          <div className="flex items-center justify-end pr-5">
+            <img
+              className="h-14 w-14 rounded-full filter grayscale hover:grayscale-0 hover:text-[#37b3ed] transition-all duration-300 ease-in-out"
+              src="/AREmoji/AREmojiGif8.gif"
+              alt="footerImage"
+            />
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 }
