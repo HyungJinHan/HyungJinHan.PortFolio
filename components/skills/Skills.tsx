@@ -38,7 +38,7 @@ export default function Skills({}: Props) {
         Hover over a skill for currency profiency
       </h3>
 
-      <div className="grid grid-cols-5 gap-12 pt-32 max-md:pt-30 max-md:grid-cols-4 max-sm:pt-30 max-sm:grid-cols-3 max-sm:gap-8">
+      <div className="grid grid-cols-5 gap-12 pt-32 max-md:pt-30 max-md:grid-cols-4 max-sm:pt-30 max-sm:grid-cols-4 max-sm:gap-8">
         <ReactSkill />
         <NextjsSkill />
         <TypeScriptSkill />

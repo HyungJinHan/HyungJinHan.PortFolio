@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BackGroundShapes from "../layout/BackGroundShapes";
@@ -52,6 +51,10 @@ export default function Hero({}: Props) {
 
           <Link href="#projects">
             <button className="heroButton">Projects</button>
+          </Link>
+
+          <Link href="#contact">
+            <button className="heroButton">Contact Me</button>
           </Link>
         </div>
       </div>

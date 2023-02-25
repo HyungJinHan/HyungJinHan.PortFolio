@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { GrFacebookOption, GrGithub, GrLinkedinOption } from "react-icons/gr";
 import { FiMail } from "react-icons/fi";
+import { AiFillHome } from "react-icons/ai";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
@@ -38,6 +39,10 @@ export default function Header({}: Props) {
         <Link href="https://github.com/HyungJinHan" target="_blank">
           <GrGithub className="headerIcon" />
         </Link>
+
+        <Link href="https://velog.io/@hyungjin_han" target="_blank">
+          <AiFillHome className="headerIcon" />
+        </Link>
       </motion.div>
 
       <motion.div
@@ -72,7 +77,11 @@ export default function Header({}: Props) {
         />
         <CopyToClipboard
           text="han1210_36@naver.com"
-          onCopy={() => toast.success("Email Copied to Clipboard!")}
+          onCopy={() =>
+            toast.success("Email Copied to Clipboard!", {
+              icon: "📋",
+            })
+          }
         >
           <FiMail className="cursor-pointer text-gray-400 hover:text-[#37b3ed] mr-3 w-7 h-7 transition-all duration-300 ease-in-out" />
         </CopyToClipboard>
