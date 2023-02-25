@@ -34,17 +34,17 @@ export default function ExperienceCardDrone({}: Props) {
         <div className="flex space-x-2 my-2">
           <img
             className="h-8 w-8 rounded-full"
-            src="/icons/skill/cad.png"
+            src="/icons/skillIcon/cad.png"
             alt="autoCad"
           />
           <img
             className="h-8 w-8 rounded-full"
-            src="/icons/skill/msOffice.svg"
+            src="/icons/skillIcon/msOffice.svg"
             alt="msOffice"
           />
           <img
             className="h-8 w-8 rounded-full"
-            src="/icons/skill/youtube.png"
+            src="/icons/skillIcon/youtube.png"
             alt="youtube"
           />
         </div>

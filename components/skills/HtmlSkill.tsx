@@ -20,7 +20,7 @@ export default function HtmlSkill({ directionLeft }: Props) {
           opacity: 1,
           x: 0,
         }}
-        src="/icons/skill/html5.svg"
+        src="/icons/skillIcon/html5.svg"
         alt="html"
         className="max-sm:w-20 max-sm:h-20 w-24 h-24 md:h-28 md:w-28 xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out"
       />

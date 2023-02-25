@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import BackGroundShapes from "../layout/BackGroundShapes";
