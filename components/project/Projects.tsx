@@ -7,6 +7,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import SoloFitness from "./SoloFitness";
 import DeliveryBee from "./DeliveryBee";
+import Moogle from "./Moogle";
+import Chatgpt from "./Chatgpt";
 
 type Props = {};
 
@@ -39,7 +41,13 @@ export default function Projects({}: Props) {
             <SoloFitness />
           </SwiperSlide>
           <SwiperSlide>
+            <Chatgpt />
+          </SwiperSlide>
+          <SwiperSlide>
             <DeliveryBee />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Moogle />
           </SwiperSlide>
         </Swiper>
       </div>

@@ -6,7 +6,7 @@ type Props = {};
 
 export default function ExperienceCardDrone({}: Props) {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[700px] max-sm:w-[300px] bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-300 m-auto">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 md:w-[700px] max-sm:w-[300px] bg-[#292929] p-10 max-sm:p-5 hover:opacity-100 opacity-40 cursor-pointer transition-opacity m-auto">
       <motion.img
         initial={{
           y: -100,
@@ -28,22 +28,22 @@ export default function ExperienceCardDrone({}: Props) {
       />
 
       <div className="px-0 md:px-10">
-        <h4 className="text-2xl font-light">Instructor, Mechanic</h4>
+        <h4 className="text-2xl font-light">Work (Instructor / Mechanic)</h4>
         <p className="font-bold text-2xl mt-1">청년항공</p>
 
         <div className="flex space-x-2 my-2">
           <img
-            className="h-8 w-8 rounded-full"
+            className="h-8 w-8"
             src="/icons/skillIcon/cad.png"
             alt="autoCad"
           />
           <img
-            className="h-8 w-8 rounded-full"
+            className="h-8 w-8"
             src="/icons/skillIcon/msOffice.svg"
             alt="msOffice"
           />
           <img
-            className="h-8 w-8 rounded-full"
+            className="w-8"
             src="/icons/skillIcon/youtube.png"
             alt="youtube"
           />

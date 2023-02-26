@@ -43,17 +43,17 @@ export default function Home() {
         <ContactMe />
       </section>
 
-      <Link href="#hero">
-        <footer className="sticky bottom-5 w-full">
-          <div className="flex items-center justify-end pr-5">
+      <footer className="sticky bottom-5 w-full">
+        <div className="flex items-center justify-end pr-5">
+          <Link href="#hero">
             <img
               className="h-14 w-14 rounded-full filter grayscale hover:grayscale-0 hover:text-[#37b3ed] transition-all duration-300 ease-in-out"
               src="/AREmoji/AREmojiGif8.gif"
               alt="footerImage"
             />
-          </div>
-        </footer>
-      </Link>
+          </Link>
+        </div>
+      </footer>
     </div>
   );
 }

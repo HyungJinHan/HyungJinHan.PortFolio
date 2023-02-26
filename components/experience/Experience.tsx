@@ -5,6 +5,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import ExperienceCardAi from "./ExperienceCardAi";
+import ExperienceCardAiCertification from "./ExperienceCardAiCertification";
+import ExperienceCardPaperF from "./ExperienceCardPaperF";
+import ExperienceCardPaperS from "./ExperienceCardPaperS";
+import ExperienceCardSchool from "./ExperienceCardSchool";
+import ExperienceCardDroneLicense from "./ExperienceCardDroneLicense";
+import ExperienceCardDriveLicense from "./ExperienceCardDriveLicense";
 
 type Props = {};
 
@@ -26,7 +33,7 @@ export default function Experience({}: Props) {
         Experience
       </h3>
 
-      <div className="relative w-full flex p-15 mt-20">
+      <div className="relative w-full flex p-15 mt-32">
         <Swiper
           navigation={true}
           pagination={{ clickable: true }}
@@ -36,7 +43,28 @@ export default function Experience({}: Props) {
           centeredSlides={true}
         >
           <SwiperSlide>
+            <ExperienceCardAi />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ExperienceCardPaperS />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ExperienceCardAiCertification />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ExperienceCardPaperF />
+          </SwiperSlide>
+          <SwiperSlide>
             <ExperienceCardDrone />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ExperienceCardSchool />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ExperienceCardDroneLicense />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ExperienceCardDriveLicense />
           </SwiperSlide>
         </Swiper>
       </div>

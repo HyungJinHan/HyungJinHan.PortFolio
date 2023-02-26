@@ -157,11 +157,15 @@ export default function ContactMe({}: Props) {
 
           <button
             type="submit"
-            className="bg-[#37b3ed] py-5 px-10 rounded-md text-[rgb(36,36,36)] font-bold text-lg"
+            className="bg-[#37b3ed] py-5 px-10 mb-10 rounded-md text-[rgb(36,36,36)] font-bold text-lg"
           >
             Submit
           </button>
         </form>
+
+        {/* <div className="flex text-gray-400 justify-center">
+          © 2023. Hyung-Jin Han. All rights reserved.
+        </div> */}
       </motion.div>
     </motion.div>
   );
