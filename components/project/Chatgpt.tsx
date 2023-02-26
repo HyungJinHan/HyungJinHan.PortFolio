@@ -29,7 +29,7 @@ export default function Chatgpt({}: Props) {
       <div className="space-y-10 px-0 md:px-10 max-2-6xl">
         <h4 className="text-4xl font-semibold max-sm:font-bold max-sm:text-2xl text-center -mb-[20px]">
           <span className="underline decoration-[#37b3ed]/50">
-            2. ChatGPT Messenger (
+            ChatGPT Messenger (
             <a
               className="underline text-[#37b3ed]/50 hover:text-[#37b3ed] transition duration-300 ease-in-out"
               href="https://chatgpt-messenger-hyungjinhan.vercel.app/"
@@ -60,14 +60,22 @@ export default function Chatgpt({}: Props) {
         </h4>
 
         <p className="text-lg text-center md:text-left leading-8 max-sm:leading-6 max-sm:text-sm max-md:text-sm max-lg:text-base max-lg:leading-6">
-          네이버 `API`를 활용하여 간단한 토이 프로젝트로 제작한 영화 검색
-          사이트입니다.
+          현재 서비스를 진행 중인 Chat GPT 사이트를 클론하여 만든
+          프로젝트입니다.
           <br />
-          다양한 영화 속 자신이 원하는 영화를 찾을 수 있도록 국가, 장르 등
-          다양한 선택지를 제공하여 영화를 검색할 수 있게 제작했습니다.
+          Open AI의 API를 사용하여 실제 AI를 통한 답변을 받을 수 있습니다.
           <br />
-          또한 구글을 레퍼런스로 하여 구글 검색과 비슷한 느낌으로 `UI`를
-          설계했습니다.
+          PC 뿐만이 아닌 반응형 스타일링을 통해 패드와 모바일 환경에도 적합할 수
+          있도록 화면을 설계했으며, 다양한 AI 모델을 선택해서 다양한 답변을 들을
+          수 있도록 구현했습니다.
+          <br />
+          또한 간편하게 회원가입 및 로그인이 가능하도록 Gmail을 통해 가입이
+          가능하며, Firebase 사용을 통해 자신이 어떠한 채팅을 했는지 내역을
+          확인할 수 있습니다.
+          <br />
+          <span className="underline font-bold text-[#37b3ed]">
+            제목의 Deploy Link를 통해 배포된 사이트를 이용해보세요!
+          </span>
         </p>
       </div>
     </div>

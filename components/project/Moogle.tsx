@@ -29,7 +29,7 @@ export default function Moogle({}: Props) {
       <div className="space-y-10 px-0 md:px-10 max-2-6xl">
         <h4 className="text-4xl font-semibold max-sm:font-bold max-sm:text-2xl text-center -mb-[20px]">
           <span className="underline decoration-[#37b3ed]/50">
-            4. Moogle (영화 검색 사이트)
+            Moogle (영화 검색 사이트)
           </span>
           <br />
           <span className="text-lg">

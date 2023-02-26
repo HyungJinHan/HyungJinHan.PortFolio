@@ -29,7 +29,7 @@ export default function SoloFitness({}: Props) {
       <div className="space-y-10 px-0 md:px-10 max-2-6xl">
         <h4 className="text-4xl font-semibold max-sm:font-bold max-sm:text-2xl text-center -mb-[20px]">
           <span className="underline decoration-[#37b3ed]/50">
-            1. 나 혼자 피트니스 (AI 헬스케어 서비스)
+            나 혼자 피트니스 (AI 헬스케어 서비스)
           </span>
           <br />
           <span className="text-lg">
