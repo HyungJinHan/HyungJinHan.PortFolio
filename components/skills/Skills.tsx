@@ -14,6 +14,9 @@ import JavaScriptSkill from "./JavaScriptSkill";
 import VscodeSkill from "./VscodeSkill";
 import NotionSkill from "./NotionSkill";
 import FigmaSkill from "./FigmaSkill";
+import PptSkill from "./PptSkill";
+import ExcelSkill from "./ExcelSkill";
+import WordSkill from "./WordSkill";
 
 type Props = {};
 
@@ -39,7 +42,7 @@ export default function Skills({}: Props) {
         Hover over a skill for currency profiency
       </h3>
 
-      <div className="grid grid-cols-5 gap-12 pt-32 max-md:pt-30 max-md:grid-cols-4 max-sm:pt-30 max-sm:grid-cols-4 max-sm:gap-8">
+      <div className="grid grid-cols-5 gap-10 pt-40 max-md:pt-30 max-md:grid-cols-4 max-md:gap-5 max-sm:pt-30 max-sm:grid-cols-4 max-sm:gap-8">
         <ReactSkill />
         <NextjsSkill />
         <TypeScriptSkill />
@@ -54,6 +57,9 @@ export default function Skills({}: Props) {
         <VscodeSkill />
         <FigmaSkill />
         <NotionSkill />
+        <PptSkill />
+        <ExcelSkill />
+        <WordSkill />
       </div>
     </motion.div>
   );
