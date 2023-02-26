@@ -13,6 +13,7 @@ import CssSkill from "./CssSkill";
 import JavaScriptSkill from "./JavaScriptSkill";
 import VscodeSkill from "./VscodeSkill";
 import NotionSkill from "./NotionSkill";
+import FigmaSkill from "./FigmaSkill";
 
 type Props = {};
 
@@ -51,6 +52,7 @@ export default function Skills({}: Props) {
         <MysqlSkill />
         <FirebaseSkill />
         <VscodeSkill />
+        <FigmaSkill />
         <NotionSkill />
       </div>
     </motion.div>

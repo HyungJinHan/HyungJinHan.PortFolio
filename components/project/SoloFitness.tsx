@@ -43,10 +43,10 @@ export default function SoloFitness({}: Props) {
             <span className="px-2">|</span>
             <a
               className="underline text-[#37b3ed]/50 text-lg hover:text-[#37b3ed] transition duration-300 ease-in-out"
-              href="https://github.com/HyungJinHan/AI_trainer_SoloFitness_Project"
+              href="https://hyungjinhan.notion.site/AI-Trainer-96c4781a92c449269a4b9aed45110ec3"
               target="_blank"
             >
-              Project Detail Page
+              Project Detail Page (Notion)
             </a>
           </span>
         </h4>

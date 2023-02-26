@@ -6,6 +6,7 @@ import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import SoloFitness from "./SoloFitness";
+import DeliveryBee from "./DeliveryBee";
 
 type Props = {};
 
@@ -36,6 +37,9 @@ export default function Projects({}: Props) {
         >
           <SwiperSlide>
             <SoloFitness />
+          </SwiperSlide>
+          <SwiperSlide>
+            <DeliveryBee />
           </SwiperSlide>
         </Swiper>
       </div>
