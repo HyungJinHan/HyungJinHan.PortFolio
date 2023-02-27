@@ -51,7 +51,7 @@ export default function Projects({}: Props) {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="w-full absolute top-[30%] bg-[#37b3ed]/10 left-0 h-[500px] -skew-y-12" />
+      <div className="w-full absolute top-[25%] bg-[#37b3ed]/10 left-0 h-[500px] -skew-y-12" />
     </motion.div>
   );
 }
