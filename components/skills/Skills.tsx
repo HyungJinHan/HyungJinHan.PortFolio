@@ -26,7 +26,7 @@ export default function Skills({ skills }: Props) {
       </h3>
 
       <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm text-center">
-        Hover over a skill for currency profiency
+        Hover over a skill for current proficiency
       </h3>
 
       <div className="grid grid-cols-5 gap-10 pt-40 max-md:pt-30 max-md:grid-cols-4 max-md:gap-5 max-sm:pt-30 max-sm:grid-cols-4 max-sm:gap-8">
