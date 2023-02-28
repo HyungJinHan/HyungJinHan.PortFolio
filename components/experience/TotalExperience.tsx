@@ -1,19 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ExperienceCardDrone from "./ExperienceCardDrone";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import ExperienceCardAi from "./ExperienceCardAi";
-import ExperienceCardAiCertification from "./ExperienceCardAiCertification";
-import ExperienceCardPaperF from "./ExperienceCardPaperF";
-import ExperienceCardPaperS from "./ExperienceCardPaperS";
-import ExperienceCardSchool from "./ExperienceCardSchool";
-import ExperienceCardDroneLicense from "./ExperienceCardDroneLicense";
-import ExperienceCardDriveLicense from "./ExperienceCardDriveLicense";
 import { Experience } from "@/typings";
-import experience from "@/sanity/schemas/experience";
 import ExperienceCard from "./ExperienceCard";
 
 type Props = {
@@ -52,30 +43,6 @@ export default function TotalExperience({ experiences }: Props) {
               <ExperienceCard experience={experience} />
             </SwiperSlide>
           ))}
-          <SwiperSlide>
-            <ExperienceCardAi />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ExperienceCardPaperS />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ExperienceCardAiCertification />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ExperienceCardPaperF />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ExperienceCardDrone />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ExperienceCardSchool />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ExperienceCardDroneLicense />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ExperienceCardDriveLicense />
-          </SwiperSlide>
         </Swiper>
       </div>
     </motion.div>

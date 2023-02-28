@@ -4,7 +4,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { groq } from "next-sanity";
 
 const query = groq`
-  *[_type == "pageInfo"][0]
+  *[_type == "pageInfo"] | order(_createdAt desc)[0]
 `;
 
 type Data = {

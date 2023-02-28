@@ -22,8 +22,7 @@ export default function ExperienceCard({ experience }: Props) {
         ? "0" + startDate.getDate()
         : startDate.getDate();
 
-    const startDateFormat =
-      startDate.getFullYear() + "." + startMonthType + "." + startDateType;
+    const startDateFormat = startDate.getFullYear() + "." + startMonthType;
 
     if (!experience.dateEnded && !experience.isCurrentlyWorkingHere) {
       return `${startDateFormat} ${experience?.totalDate}`;
@@ -40,12 +39,11 @@ export default function ExperienceCard({ experience }: Props) {
           ? "0" + endDate.getDate()
           : endDate.getDate();
 
-      const endDateFormat =
-        endDate.getFullYear() + "." + endMonthType + "." + endDateType;
+      const endDateFormat = endDate.getFullYear() + "." + endMonthType;
 
       return `${startDateFormat} - ${
         experience?.isCurrentlyWorkingHere ? "Present" : endDateFormat
-      } (${experience?.totalDate})`;
+      } ${experience?.totalDate}`;
     }
   };
 
@@ -76,7 +74,7 @@ export default function ExperienceCard({ experience }: Props) {
         <p className="font-bold text-2xl mt-1">{experience.experienceTitle}</p>
 
         <div className="flex space-x-2 my-2">
-          {experience?.technologies.map((technology) => (
+          {experience.technologies.map((technology) => (
             <img
               className="h-8 w-8"
               key={technology._id}

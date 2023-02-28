@@ -4,7 +4,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { groq } from "next-sanity";
 
 const query = groq`
-  *[_type == "skill"]
+  *[_type == "skill"] | order(_createdAt desc)
 `;
 
 type Data = {

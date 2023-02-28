@@ -1,22 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import ReactSkill from "./ReactSkill";
-import TypeScriptSkill from "./TypeScriptSkill";
-import NextjsSkill from "./NextjsSkill";
-import TailwindcssSkill from "./TailwindcssSkill";
-import PythonSkill from "./PythonSkill";
-import NodeSkill from "./NodeSkill";
-import MysqlSkill from "./MysqlSkill";
-import FirebaseSkill from "./FirebaseSkill";
-import HtmlSkill from "./HtmlSkill";
-import CssSkill from "./CssSkill";
-import JavaScriptSkill from "./JavaScriptSkill";
-import VscodeSkill from "./VscodeSkill";
-import NotionSkill from "./NotionSkill";
-import FigmaSkill from "./FigmaSkill";
-import PptSkill from "./PptSkill";
-import ExcelSkill from "./ExcelSkill";
-import WordSkill from "./WordSkill";
 import { Skill as SkillType } from "@/typings";
 import Skill from "./Skill";
 
@@ -47,23 +30,6 @@ export default function Skills({ skills }: Props) {
       </h3>
 
       <div className="grid grid-cols-5 gap-10 pt-40 max-md:pt-30 max-md:grid-cols-4 max-md:gap-5 max-sm:pt-30 max-sm:grid-cols-4 max-sm:gap-8">
-        <ReactSkill />
-        <NextjsSkill />
-        <TypeScriptSkill />
-        <JavaScriptSkill />
-        <TailwindcssSkill />
-        <PythonSkill />
-        <HtmlSkill />
-        <CssSkill />
-        <NodeSkill />
-        <MysqlSkill />
-        <FirebaseSkill />
-        <VscodeSkill />
-        <FigmaSkill />
-        <NotionSkill />
-        <PptSkill />
-        <ExcelSkill />
-        <WordSkill />
         {skills?.map((skill) => (
           <Skill key={skill._id} skill={skill} />
         ))}
