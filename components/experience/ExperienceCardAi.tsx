@@ -27,17 +27,11 @@ export default function ExperienceCardAi({}: Props) {
         alt="aiSchool"
       />
 
-      <div className="px-0 md:px-10">
+      <div className="px-0 md:px-10 mx-5">
         <h4 className="text-2xl font-light">Education</h4>
         <p className="font-bold text-2xl mt-1">인공지능사관학교</p>
 
         <div className="flex space-x-2 my-2">
-          <img
-            className="h-8 w-8"
-            src="/icons/skillIcon/html5.svg"
-            alt="html"
-          />
-          <img className="h-8 w-8" src="/icons/skillIcon/css3.svg" alt="css" />
           <img className="h-8 w-8" src="/icons/skillIcon/js.png" alt="js" />
           <img
             className="h-8 w-8"
@@ -68,7 +62,7 @@ export default function ExperienceCardAi({}: Props) {
           </p>
         </div>
 
-        <ul className="list-disc space-y-4 ml-5 text-base max-sm:text-sm">
+        <ul className="list-disc pr-10 space-y-4 ml-5 text-base max-sm:text-sm h-72 overflow-y-scroll scrollbar-thin scrollbar-[#242424] scrollbar-thumb-[#37b3ed]/80">
           <li>JavaScript와 Python 기반의 AI 서비스 과정 수료</li>
           <li>
             JavaScript 기반의 React를 활용한 유저 친화적인 인터페이스 설계

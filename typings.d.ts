@@ -51,11 +51,12 @@ export interface Project extends SanityBody {
 
 export interface Experience extends SanityBody {
   _type: "experience";
-  jobTitle: string;
-  company: string;
-  companyImage: Image;
+  experienceTitle: string;
+  experienceType: string;
+  experienceImage: Image;
   dateStarted: date;
   dateEnded: date;
+  totalDate: string;
   isCurrentlyWorkingHere: boolean;
   technologies: Technology[];
   points: string[];

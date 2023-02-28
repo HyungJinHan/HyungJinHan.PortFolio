@@ -27,7 +27,7 @@ export default function ExperienceCardAiCertification({}: Props) {
         alt="ai900"
       />
 
-      <div className="px-0 md:px-10">
+      <div className="px-0 md:px-10 mx-5">
         <h4 className="text-2xl font-light">Certification</h4>
         <p className="font-bold text-2xl mt-1">
           Azure AI Fundamentals (AI-900)
@@ -52,7 +52,7 @@ export default function ExperienceCardAiCertification({}: Props) {
           </p>
         </div>
 
-        <ul className="list-disc space-y-4 ml-5 text-base max-sm:text-sm">
+        <ul className="list-disc space-y-4 ml-5 text-base max-sm:text-sm h-72 overflow-y-scroll scrollbar-thin scrollbar-[#242424] scrollbar-thumb-[#37b3ed]/80">
           <li>
             <a
               href="https://www.credly.com/badges/43d9b719-2f8e-4920-bd1f-e5318caba5b0/linked_in_profile"

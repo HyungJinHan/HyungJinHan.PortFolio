@@ -12,10 +12,15 @@ import ExperienceCardPaperS from "./ExperienceCardPaperS";
 import ExperienceCardSchool from "./ExperienceCardSchool";
 import ExperienceCardDroneLicense from "./ExperienceCardDroneLicense";
 import ExperienceCardDriveLicense from "./ExperienceCardDriveLicense";
+import { Experience } from "@/typings";
+import experience from "@/sanity/schemas/experience";
+import ExperienceCard from "./ExperienceCard";
 
-type Props = {};
+type Props = {
+  experiences: Experience[];
+};
 
-export default function Experience({}: Props) {
+export default function TotalExperience({ experiences }: Props) {
   return (
     <motion.div
       initial={{
@@ -42,6 +47,11 @@ export default function Experience({}: Props) {
           slidesPerView={1}
           centeredSlides={true}
         >
+          {experiences?.map((experience) => (
+            <SwiperSlide key={experience._id}>
+              <ExperienceCard experience={experience} />
+            </SwiperSlide>
+          ))}
           <SwiperSlide>
             <ExperienceCardAi />
           </SwiperSlide>

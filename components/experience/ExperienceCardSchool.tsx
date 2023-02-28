@@ -27,7 +27,7 @@ export default function ExperienceCardSchool({}: Props) {
         alt="chosun"
       />
 
-      <div className="px-0 md:px-10">
+      <div className="px-0 md:px-10 mx-5">
         <h4 className="text-2xl font-light">University</h4>
         <p className="font-bold text-2xl mt-1">광주 조선대학교</p>
 
@@ -37,7 +37,7 @@ export default function ExperienceCardSchool({}: Props) {
           </p>
         </div>
 
-        <ul className="list-disc space-y-4 ml-5 text-base max-sm:text-sm">
+        <ul className="list-disc pr-10 space-y-4 ml-5 text-base max-sm:text-sm h-72 overflow-y-scroll scrollbar-thin scrollbar-[#242424] scrollbar-thumb-[#37b3ed]/80">
           <li>글로벌 인문대학 일본어과 졸업</li>
         </ul>
       </div>

@@ -27,7 +27,7 @@ export default function ExperienceCardDrone({}: Props) {
         alt="drone"
       />
 
-      <div className="px-0 md:px-10">
+      <div className="px-0 md:px-10 mx-5">
         <h4 className="text-2xl font-light">Work (Instructor / Mechanic)</h4>
         <p className="font-bold text-2xl mt-1">청년항공</p>
 
@@ -55,7 +55,7 @@ export default function ExperienceCardDrone({}: Props) {
           </p>
         </div>
 
-        <ul className="list-disc space-y-4 ml-5 text-base max-sm:text-sm">
+        <ul className="list-disc space-y-4 ml-5 text-base max-sm:text-sm h-72 overflow-y-scroll scrollbar-thin scrollbar-[#242424] scrollbar-thumb-[#37b3ed]/80">
           <li>자격증 반 교육 교관</li>
           <li>드론 조립, 센서 조정 등의 정비 및 개발</li>
           <li>초, 고등학교 드론 방과후 강사</li>

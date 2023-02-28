@@ -27,7 +27,7 @@ export default function ExperienceCardDroneLicense({}: Props) {
         alt="ts"
       />
 
-      <div className="px-0 md:px-10">
+      <div className="px-0 md:px-10 mx-5">
         <h4 className="text-2xl font-light">License</h4>
         <p className="font-bold text-2xl mt-1">초경량비행장치 지도조종자</p>
 
@@ -37,7 +37,7 @@ export default function ExperienceCardDroneLicense({}: Props) {
           </p>
         </div>
 
-        <ul className="list-disc space-y-4 ml-5 text-base max-sm:text-sm">
+        <ul className="list-disc space-y-4 ml-5 text-base max-sm:text-sm h-72 overflow-y-scroll scrollbar-thin scrollbar-[#242424] scrollbar-thumb-[#37b3ed]/80">
           <li>농업용 대형 드론 교관 자격증 취득</li>
         </ul>
       </div>

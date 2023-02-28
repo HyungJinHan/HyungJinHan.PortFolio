@@ -22,22 +22,16 @@ export default function ExperienceCardPaperF({}: Props) {
         viewport={{
           once: true,
         }}
-        className="w-52 object-cover object-center m-10"
+        className="w-52 object-cover object-center m-6"
         src="/experience/resumeIcon/kais.PNG"
         alt="kais"
       />
 
-      <div className="px-0 md:px-10">
+      <div className="px-0 md:px-10 mx-5">
         <h4 className="text-2xl font-light">Paper Presentation</h4>
         <p className="font-bold text-2xl mt-1">한국정보시스템학회</p>
 
         <div className="flex space-x-2 my-2">
-          <img
-            className="h-8 w-8"
-            src="/icons/skillIcon/html5.svg"
-            alt="html"
-          />
-          <img className="h-8 w-8" src="/icons/skillIcon/css3.svg" alt="css" />
           <img className="h-8 w-8" src="/icons/skillIcon/js.png" alt="js" />
           <img
             className="h-8 w-8"
@@ -58,7 +52,7 @@ export default function ExperienceCardPaperF({}: Props) {
           </p>
         </div>
 
-        <ul className="list-disc space-y-4 ml-5 text-base max-sm:text-sm">
+        <ul className="list-disc space-y-4 ml-5 text-base max-sm:text-sm h-72 overflow-y-scroll scrollbar-thin scrollbar-[#242424] scrollbar-thumb-[#37b3ed]/80">
           <li>학술 대회 장소 : 목포해양대학교</li>
           <li>저자 : 김건, 김성환, 전우진, 문경현, 황기성</li>
           <li>

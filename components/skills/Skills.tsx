@@ -17,10 +17,14 @@ import FigmaSkill from "./FigmaSkill";
 import PptSkill from "./PptSkill";
 import ExcelSkill from "./ExcelSkill";
 import WordSkill from "./WordSkill";
+import { Skill as SkillType } from "@/typings";
+import Skill from "./Skill";
 
-type Props = {};
+type Props = {
+  skills: SkillType[];
+};
 
-export default function Skills({}: Props) {
+export default function Skills({ skills }: Props) {
   return (
     <motion.div
       initial={{
@@ -60,6 +64,9 @@ export default function Skills({}: Props) {
         <PptSkill />
         <ExcelSkill />
         <WordSkill />
+        {skills?.map((skill) => (
+          <Skill key={skill._id} skill={skill} />
+        ))}
       </div>
     </motion.div>
   );

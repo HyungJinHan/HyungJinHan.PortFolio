@@ -6,22 +6,22 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'jobTitle',
-      title: 'JobTitle',
+      name: 'experienceTitle',
+      title: 'ExperienceTitle',
       type: 'string',
     }),
     defineField({
-      name: 'companyImage',
-      title: 'CompanyImage',
+      name: 'experienceImage',
+      title: 'ExperienceImage',
       type: 'image',
       options: {
         hotspot: true,
       },
     }),
     defineField({
-      name: 'company',
-      title: 'Company',
-      type: 'text',
+      name: 'experienceType',
+      title: 'ExperienceType',
+      type: 'string',
     }),
     defineField({
       name: 'dateStarted',
@@ -32,6 +32,11 @@ export default defineType({
       name: 'dateEnded',
       title: 'DateEnded',
       type: 'date',
+    }),
+    defineField({
+      name: 'totalDate',
+      title: 'TotalDate',
+      type: 'string',
     }),
     defineField({
       name: 'isCurrentlyWorkingHere',
