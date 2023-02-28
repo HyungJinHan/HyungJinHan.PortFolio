@@ -5,14 +5,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
-import SoloFitness from "./SoloFitness";
-import DeliveryBee from "./DeliveryBee";
-import Moogle from "./Moogle";
-import Chatgpt from "./Chatgpt";
+import { Project } from "@/typings";
+import ProjectItem from "./ProjectItem";
 
-type Props = {};
+type Props = {
+  projects: Project[];
+};
 
-export default function Projects({}: Props) {
+export default function Projects({ projects }: Props) {
   return (
     <motion.div
       className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
@@ -37,18 +37,11 @@ export default function Projects({}: Props) {
           modules={[Navigation, Pagination]}
           className="mySwiper mx-10"
         >
-          <SwiperSlide>
-            <SoloFitness />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Chatgpt />
-          </SwiperSlide>
-          <SwiperSlide>
-            <DeliveryBee />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Moogle />
-          </SwiperSlide>
+          {projects?.map((project) => (
+            <SwiperSlide key={project._id}>
+              <ProjectItem project={project} />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
       <div className="w-full absolute top-[25%] bg-[#37b3ed]/10 left-0 h-[500px] -skew-y-12" />

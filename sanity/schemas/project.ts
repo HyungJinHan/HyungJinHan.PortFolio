@@ -40,5 +40,15 @@ export default defineType({
       title: 'LinkToDetail',
       type: 'url',
     }),
+    defineField({
+      name: 'linkToDeploy',
+      title: 'LinkToDeploy',
+      type: 'url',
+    }),
+    defineField({
+      name: 'numbering',
+      title: 'Numbering',
+      type: 'number',
+    }),
   ],
 })

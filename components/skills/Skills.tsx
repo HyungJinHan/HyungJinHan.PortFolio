@@ -30,8 +30,12 @@ export default function Skills({ skills }: Props) {
       </h3>
 
       <div className="grid grid-cols-5 gap-10 pt-40 max-md:pt-30 max-md:grid-cols-4 max-md:gap-5 max-sm:pt-30 max-sm:grid-cols-4 max-sm:gap-8">
-        {skills?.map((skill) => (
+        {skills?.slice(0, skills.length / 2).map((skill) => (
           <Skill key={skill._id} skill={skill} />
+        ))}
+
+        {skills?.slice(skills.length / 2, skills.length).map((skill) => (
+          <Skill key={skill._id} skill={skill} directionLeft />
         ))}
       </div>
     </motion.div>

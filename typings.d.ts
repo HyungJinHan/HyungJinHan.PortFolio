@@ -47,6 +47,8 @@ export interface Project extends SanityBody {
   technologies: Technology[];
   linkToBuild: string;
   linkToDetail: string;
+  linkToDeploy: string;
+  numbering: number;
 }
 
 export interface Experience extends SanityBody {

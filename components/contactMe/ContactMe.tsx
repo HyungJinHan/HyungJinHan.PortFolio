@@ -3,8 +3,11 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import toast, { Toaster } from "react-hot-toast";
 import { motion } from "framer-motion";
 import { HiPhone, HiMapPin, HiEnvelope } from "react-icons/hi2";
+import { PageInfo } from "@/typings";
 
-type Props = {};
+type Props = {
+  pageInfo: PageInfo;
+};
 
 type Inputs = {
   name: string;
@@ -13,7 +16,7 @@ type Inputs = {
   message: string;
 };
 
-export default function ContactMe({}: Props) {
+export default function ContactMe({ pageInfo }: Props) {
   const {
     register,
     handleSubmit,
@@ -84,17 +87,17 @@ export default function ContactMe({}: Props) {
         <div className="space-y-5">
           <div className="flex items-center space-x-5 justify-center">
             <HiPhone className="text-[#37b3ed] h-7 w-7 animate-pulse" />
-            <p className="text-xl">010-2067-4413</p>
+            <p className="text-xl">{pageInfo?.phoneNumber}</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">
             <HiEnvelope className="text-[#37b3ed] h-7 w-7 animate-pulse" />
-            <p className="text-xl">han1210_36@naver.com</p>
+            <p className="text-xl">{pageInfo?.email}</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">
             <HiMapPin className="text-[#37b3ed] h-7 w-7 animate-pulse" />
-            <p className="text-xl">광주 광역시 광산구 월계동</p>
+            <p className="text-xl">{pageInfo?.address}</p>
           </div>
         </div>
 
