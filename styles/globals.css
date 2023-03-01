@@ -7,10 +7,6 @@
     @apply px-6 py-2 border border-transparent rounded-full uppercase text-sm tracking-widest text-gray-500 transition-all duration-300 ease-in-out hover:text-[#37b3ed] hover:border-[#37b3ed]/40 hover:bg-black/10 mx-5 my-5 max-sm:my-5;
   }
 
-  /* .headerIcon {
-    @apply cursor-pointer text-gray-400 hover:text-[#37b3ed] mx-3 w-7 h-7 transition-all duration-300 ease-in-out;
-  } */
-
   .aboutDiv {
     @apply flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center;
   }
