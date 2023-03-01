@@ -16,15 +16,15 @@ import { fetchProjects } from "@/utils/fetchProjects";
 import { fetchSocials } from "@/utils/fetchSocials";
 import { GetServerSideProps } from "next";
 
-// type Props = {
-//   pageInfo: PageInfo;
-//   experiences: Experience[];
-//   skills: Skill[];
-//   projects: Project[];
-//   socials: Social[];
-// };
+type Props = {
+  pageInfo: PageInfo;
+  experiences: Experience[];
+  skills: Skill[];
+  projects: Project[];
+  socials: Social[];
+};
 
-const Home = () => {
+const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
   return (
     <div className="bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth selection:bg-none selection:text-[#37b3ed] scrollbar-thin scrollbar-[#242424] scrollbar-thumb-[#37b3ed]/80">
       <Head>
@@ -32,7 +32,7 @@ const Home = () => {
         <link rel="icon" href="/AREmoji/AREmojiPic3.png" />
       </Head>
 
-      {/* <Header socials={socials} />
+      <Header socials={socials} />
 
       <section id="hero" className="snap-start">
         <Hero pageInfo={pageInfo} />
@@ -56,7 +56,7 @@ const Home = () => {
 
       <section id="contact" className="snap-start">
         <ContactMe pageInfo={pageInfo} />
-      </section> */}
+      </section>
 
       <footer className="sticky bottom-5 w-full">
         <div className="flex items-center justify-end pr-5">
@@ -75,20 +75,20 @@ const Home = () => {
 
 export default Home;
 
-// export const getServerSideProps: GetServerSideProps<Props> = async () => {
-//   const pageInfo: PageInfo = await fetchPageInfo();
-//   const experiences: Experience[] = await fetchExperiences();
-//   const skills: Skill[] = await fetchSkills();
-//   const projects: Project[] = await fetchProjects();
-//   const socials: Social[] = await fetchSocials();
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
+  const pageInfo: PageInfo = await fetchPageInfo();
+  const experiences: Experience[] = await fetchExperiences();
+  const skills: Skill[] = await fetchSkills();
+  const projects: Project[] = await fetchProjects();
+  const socials: Social[] = await fetchSocials();
 
-//   return {
-//     props: {
-//       pageInfo,
-//       experiences,
-//       skills,
-//       projects,
-//       socials,
-//     },
-//   };
-// };
+  return {
+    props: {
+      pageInfo,
+      experiences,
+      skills,
+      projects,
+      socials,
+    },
+  };
+};
