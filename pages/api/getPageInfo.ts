@@ -1,4 +1,4 @@
-import { sanityClient } from "@/sanity";
+import { sanityClient } from "@/sanity.config";
 import { PageInfo } from "@/typings";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { groq } from "next-sanity";

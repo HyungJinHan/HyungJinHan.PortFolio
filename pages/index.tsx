@@ -14,7 +14,7 @@ import { fetchExperiences } from "@/utils/fetchExperiences";
 import { fetchSkills } from "@/utils/fetchSkills";
 import { fetchProjects } from "@/utils/fetchProjects";
 import { fetchSocials } from "@/utils/fetchSocials";
-import { GetStaticProps } from "next";
+import { GetServerSideProps, GetStaticProps } from "next";
 
 type Props = {
   pageInfo: PageInfo;
@@ -24,13 +24,7 @@ type Props = {
   socials: Social[];
 };
 
-export default function Home({
-  pageInfo,
-  experiences,
-  skills,
-  projects,
-  socials,
-}: Props) {
+const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
   return (
     <div className="bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth selection:bg-none selection:text-[#37b3ed] scrollbar-thin scrollbar-[#242424] scrollbar-thumb-[#37b3ed]/80">
       <Head>
@@ -77,9 +71,11 @@ export default function Home({
       </footer>
     </div>
   );
-}
+};
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export default Home;
+
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
   const skills: Skill[] = await fetchSkills();
@@ -94,7 +90,5 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       projects,
       socials,
     },
-
-    revalidate: 10,
   };
 };

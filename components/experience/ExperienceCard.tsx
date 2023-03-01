@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Experience } from "@/typings";
-import { urlFor } from "@/sanity";
+import { urlFor } from "@/sanity.config";
 
 type Props = {
   experience: Experience;
@@ -48,7 +48,7 @@ export default function ExperienceCard({ experience }: Props) {
   };
 
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 md:w-[700px] max-sm:w-[300px] bg-[#292929] p-10 max-sm:p-5 hover:opacity-100 opacity-40 cursor-pointer transition-opacity m-auto">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 md:w-[700px] max-sm:w-[300px] bg-[#292929] p-10 max-sm:p-5 hover:opacity-100 opacity-40 cursor-grab transition-opacity m-auto">
       <motion.img
         initial={{
           y: -100,

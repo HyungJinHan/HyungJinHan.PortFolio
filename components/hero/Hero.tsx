@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { urlFor } from "@/sanity";
+import { urlFor } from "@/sanity.config";
 import { PageInfo } from "@/typings";
 import Link from "next/link";
 import React from "react";
