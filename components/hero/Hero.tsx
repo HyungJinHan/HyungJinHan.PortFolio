@@ -51,7 +51,7 @@ export default function Hero({ pageInfo }: Props) {
     <div className="h-screen flex flex-col items-center justify-center text-center overflow-hidden scroll-smooth">
       <BackGroundShapes />
       <img
-        className="relative h-64 w-64 mx-auto pb-10 object-cover"
+        className="relative h-64 w-64 max-sm:mt-20 mx-auto pb-10 object-cover"
         src={imageFunc()}
         alt="selfie"
       />

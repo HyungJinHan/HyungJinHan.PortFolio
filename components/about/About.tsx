@@ -85,7 +85,7 @@ export default function About({ pageInfo }: Props) {
         viewport={{
           once: true,
         }}
-        className="flex-shrink-0 w-56 h-56 rounded-full object-cover max-sm:mt-24 max-md:mt-20 max-md:-mb-10 md:rounded-lg md:w-64 md:h-95 max-sm:w-28 max-sm:h-28 xl:w-[300px] xl:h-[400px]"
+        className="flex-shrink-0 w-56 h-56 rounded-full object-cover max-sm:mt-12 max-md:mt-20 max-md:-mb-10 md:rounded-lg md:w-64 md:h-95 max-sm:w-28 max-sm:h-28 xl:w-[300px] xl:h-[400px]"
       />
 
       <div className="space-y-10 px-0 md:px-10">
