@@ -65,7 +65,7 @@ export default function About({ pageInfo }: Props) {
         duration: 1.5,
       }}
     >
-      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
 

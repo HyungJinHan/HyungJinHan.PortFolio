@@ -21,7 +21,7 @@ export default function Skills({ skills }: Props) {
       }}
       className="flex relative flex-col text-center md:text-left xl:flex-row xl:px-10 min-h-screen justify-center xl:space-y-0 mx-auto items-center"
     >
-      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Skills
       </h3>
 
@@ -29,7 +29,7 @@ export default function Skills({ skills }: Props) {
         Hover over a skill for current proficiency
       </h3>
 
-      <div className="grid grid-cols-5 gap-10 pt-40 max-md:pt-30 max-md:grid-cols-4 max-md:gap-5 max-sm:pt-30 max-sm:grid-cols-4 max-sm:gap-8">
+      <div className="grid grid-cols-5 gap-10 pt-40 max-md:pt-30 max-md:grid-cols-4 max-md:gap-5 max-sm:pt-24 max-sm:grid-cols-3 max-sm:gap-7">
         {skills?.slice(0, skills.length / 2).map((skill) => (
           <Skill key={skill._id} skill={skill} />
         ))}

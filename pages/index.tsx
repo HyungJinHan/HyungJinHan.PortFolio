@@ -58,7 +58,7 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
         <ContactMe pageInfo={pageInfo} />
       </section>
 
-      <footer className="sticky bottom-5 w-full">
+      <footer className="sticky bottom-5 w-full z-30">
         <div className="flex items-center justify-end pr-5">
           <Link href="#hero">
             <img

@@ -28,11 +28,11 @@ export default function ProjectItem({ project }: Props) {
         }}
         src={urlFor(project?.image).url()}
         alt={`${project?.title}Image`}
-        className="w-[40%] xl:w-[30%] max-sm:w-[60%]"
+        className="w-[40%] xl:w-[25%] max-sm:w-[80%] max-sm:mt-10 md:mt-5"
       />
 
-      <div className="space-y-10 px-0 md:px-10 max-2-6xl">
-        <h4 className="text-4xl font-semibold max-sm:font-bold max-sm:text-2xl text-center -mb-[20px]">
+      <div className="px-0 md:px-10 max-2-6xl">
+        <h4 className="text-4xl font-semibold max-sm:font-bold max-sm:text-xl text-center mb-5">
           <span className="underline decoration-[#37b3ed]/50">
             {!project?.linkToDeploy ? (
               project?.title
@@ -40,7 +40,7 @@ export default function ProjectItem({ project }: Props) {
               <>
                 {project?.title}&nbsp;
                 <a
-                  className="underline text-[30px] text-[#37b3ed]/50 hover:text-[#37b3ed] transition duration-300 ease-in-out"
+                  className="underline text-[30px] text-[#37b3ed]/50 max-sm:text-[15px] hover:text-[#37b3ed] transition duration-300 ease-in-out"
                   href={project?.linkToDeploy}
                   target="_blank"
                 >
@@ -52,7 +52,7 @@ export default function ProjectItem({ project }: Props) {
           <br />
           <span className="text-lg">
             <a
-              className="underline text-[#37b3ed]/50 text-lg hover:text-[#37b3ed] transition duration-300 ease-in-out"
+              className="underline text-[#37b3ed]/50 text-lg max-sm:text-sm hover:text-[#37b3ed] transition duration-300 ease-in-out"
               href={project?.linkToBuild}
               target="_blank"
             >
@@ -60,7 +60,7 @@ export default function ProjectItem({ project }: Props) {
             </a>
             <span className="px-2">|</span>
             <a
-              className="underline text-[#37b3ed]/50 text-lg hover:text-[#37b3ed] transition duration-300 ease-in-out"
+              className="underline text-[#37b3ed]/50 text-lg max-sm:text-sm hover:text-[#37b3ed] transition duration-300 ease-in-out"
               href={project?.linkToDetail}
               target="_blank"
             >
@@ -72,7 +72,7 @@ export default function ProjectItem({ project }: Props) {
         <div className="flex items-center space-x-2 justify-center">
           {project?.technologies?.map((technology) => (
             <img
-              className="h-10 w-10"
+              className="h-10 w-10 max-sm:h-8 max-sm:w-8 mb-5"
               key={technology._id}
               src={urlFor(technology.image).url()}
               alt={`${technology.title}Image`}
@@ -80,14 +80,8 @@ export default function ProjectItem({ project }: Props) {
           ))}
         </div>
 
-        <p className="text-lg text-center md:text-left leading-8 max-sm:leading-6 max-sm:text-sm max-md:text-sm max-lg:text-base max-lg:leading-6">
+        <p className="w-[700px] xl:w-[1000px] max-sm:w-[400px] max-sm:h-[270px] text-lg text-center md:text-left leading-8 max-sm:leading-6 max-sm:text-sm overflow-y-scroll scrollbar-thin scrollbar-[#242424] scrollbar-thumb-[#37b3ed]/80 max-md:text-sm max-lg:text-base max-lg:leading-6 max-sm:px-3">
           {project?.summary}
-          {/* {project?.summary.split(".").map((line) => (
-            <>
-              {line}.
-              <br />
-            </>
-          ))} */}
         </p>
       </div>
     </div>

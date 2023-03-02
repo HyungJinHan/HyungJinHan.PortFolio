@@ -55,7 +55,7 @@ export default function ContactMe({ pageInfo }: Props) {
         duration: 1.5,
       }}
     >
-      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact Me
       </h3>
 
@@ -76,7 +76,7 @@ export default function ContactMe({ pageInfo }: Props) {
           once: true,
         }}
       >
-        <h4 className="text-4xl font-semibold text-center leading-relaxed pt-12">
+        <h4 className="text-4xl font-semibold text-center leading-relaxed pt-12 max-sm:text-3xl max-sm:leading-relaxed">
           Please contact me.&nbsp;
           <br />
           <span className="decoration-[#37b3ed]/50 underline">
@@ -87,17 +87,17 @@ export default function ContactMe({ pageInfo }: Props) {
         <div className="space-y-5">
           <div className="flex items-center space-x-5 justify-center">
             <HiPhone className="text-[#37b3ed] h-7 w-7 animate-pulse" />
-            <p className="text-xl">{pageInfo?.phoneNumber}</p>
+            <p className="text-xl max-sm:text-lg">{pageInfo?.phoneNumber}</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">
             <HiEnvelope className="text-[#37b3ed] h-7 w-7 animate-pulse" />
-            <p className="text-xl">{pageInfo?.email}</p>
+            <p className="text-xl max-sm:text-lg">{pageInfo?.email}</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">
             <HiMapPin className="text-[#37b3ed] h-7 w-7 animate-pulse" />
-            <p className="text-xl">{pageInfo?.address}</p>
+            <p className="text-xl max-sm:text-lg">{pageInfo?.address}</p>
           </div>
         </div>
 
@@ -110,14 +110,14 @@ export default function ContactMe({ pageInfo }: Props) {
               autoComplete="off"
               {...register("name")}
               placeholder="Name"
-              className="contactInput"
+              className="contactInput max-sm:w-44"
               type="text"
             />
             <input
               autoComplete="off"
               {...register("email")}
               placeholder="Email"
-              className="contactInput"
+              className="contactInput max-sm:w-44"
               type="email"
             />
           </div>

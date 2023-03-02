@@ -25,12 +25,12 @@ export default function Skill({ skill, directionLeft }: Props) {
         }}
         src={urlFor(skill?.image).url()}
         alt={`${skill?.title}Icon`}
-        className="max-sm:w-20 max-sm:h-20 w-24 h-24 md:h-28 md:w-28 filter group-hover:grayscale transition duration-300 ease-in-out"
+        className="max-sm:w-16 max-sm:h-16 w-24 h-24 md:h-28 md:w-28 filter group-hover:grayscale transition duration-300 ease-in-out"
       />
 
-      <div className="absolute opacity-0 group-hover:opacity-100 h-24 w-24 md:h-28 md:w-28 max-sm:w-20 max-sm:h-20 transition duration-300 ease-in-out">
+      <div className="absolute opacity-0 group-hover:opacity-100 h-24 w-24 md:h-28 md:w-28 max-sm:w-16 max-sm:h-16 transition duration-300 ease-in-out">
         <div className="flex items-center justify-center h-full">
-          <p className="text-3xl font-bold text-black opacity-100 border bg-white bg-opacity-70 rounded-lg px-3">
+          <p className="text-3xl font-bold text-black opacity-100 border bg-white bg-opacity-70 rounded-lg px-3 max-sm:text-xl">
             {skill?.progress}%
           </p>
         </div>
