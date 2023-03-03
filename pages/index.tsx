@@ -26,7 +26,7 @@ type Props = {
 
 const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
   return (
-    <div className="bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scroll-smooth selection:bg-none selection:text-[#37b3ed] scrollbar-thin scrollbar-[#242424] scrollbar-thumb-[#37b3ed]/80">
+    <div className="bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 selection:bg-none selection:text-[#37b3ed] scrollbar-thin scrollbar-[#242424] scrollbar-thumb-[#37b3ed]/80">
       <Head>
         <title>Hyung-Jin Han&apos;s Portfolio</title>
         <link rel="icon" href="/AREmoji/AREmojiPic3.png" />
