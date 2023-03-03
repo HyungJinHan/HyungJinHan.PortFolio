@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { Experience } from "@/typings";
 import ExperienceCard from "./ExperienceCard";
 
@@ -34,7 +35,7 @@ export default function TotalExperience({ experiences }: Props) {
           navigation={true}
           pagination={{ clickable: true }}
           modules={[Navigation, Pagination]}
-          className="mySwiper"
+          className="mySwiper z-50"
           slidesPerView={1}
           centeredSlides={true}
         >
