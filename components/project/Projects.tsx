@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { Project } from "@/typings";
 import ProjectItem from "./ProjectItem";
 
@@ -35,7 +36,7 @@ export default function Projects({ projects }: Props) {
           navigation={true}
           pagination={{ clickable: true }}
           modules={[Navigation, Pagination]}
-          className="mySwiper mx-10"
+          className="mySwiper mx-10 z-50"
         >
           {projects?.map((project) => (
             <SwiperSlide key={project._id}>
