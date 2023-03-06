@@ -76,6 +76,8 @@ const Home = ({ pageInfo, experiences, skills, projects, socials }: Props) => {
 export default Home;
 
 export const getServerSideProps: GetServerSideProps<Props> = async () => {
+  // GetStaticProps의 경우 서버에서 불러오는 데이터를 처리하는 방식이 아니기 때문에 build 에러
+  // GetServerSideProps로 변경 후 데이터 불러오기 성공 (build 할 때)
   const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
   const skills: Skill[] = await fetchSkills();
