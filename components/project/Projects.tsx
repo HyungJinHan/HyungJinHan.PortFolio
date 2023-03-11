@@ -38,9 +38,9 @@ export default function Projects({ projects }: Props) {
           modules={[Navigation, Pagination]}
           className="mySwiper mx-10 z-50"
         >
-          {projects?.map((project) => (
+          {projects?.map((project, i) => (
             <SwiperSlide key={project._id}>
-              <ProjectItem project={project} />
+              <ProjectItem length={projects.length} num={i} project={project} />
             </SwiperSlide>
           ))}
         </Swiper>

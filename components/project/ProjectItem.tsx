@@ -6,9 +6,11 @@ import { urlFor } from "@/sanity.config";
 
 type Props = {
   project: Project;
+  num: number;
+  length: number;
 };
 
-export default function ProjectItem({ project }: Props) {
+export default function ProjectItem({ project, num, length }: Props) {
   return (
     <div className="w-screen flex-shrink-0 flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen overflow-x-scroll overflow-y-hidden scrollbar-thin scrollbar-[#242424] scrollbar-thumb-[#37b3ed]/80">
       <motion.img
@@ -30,10 +32,10 @@ export default function ProjectItem({ project }: Props) {
         alt={`${project?.title}Image`}
         className="w-[40%] xl:w-[25%] max-sm:w-[80%] max-sm:mt-10 md:mt-5"
       />
-
       <div className="px-0 md:px-10 max-2-6xl">
         <h4 className="text-4xl font-semibold max-sm:font-bold max-sm:text-xl text-center mb-5">
           <span className="underline decoration-[#37b3ed]/50">
+            ({num + 1}/{length})&nbsp;
             {!project?.linkToDeploy ? (
               project?.title
             ) : (
