@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
+@layer base, components, utilities {
+  * {
     scroll-behavior: smooth;
   }
 }
