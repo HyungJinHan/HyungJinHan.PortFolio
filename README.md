@@ -4,7 +4,7 @@
 
 ### **`NextJS`와 `TypeScript`, `Sanity`를 활용하여 리뉴얼한 포트폴리오 사이트입니다!**
 
-<a href='https://hyungjinhan.vercel.app/'>
+<a href='https://hyungjinhan.vercel.app/' target="_blank">
 <img width='70%' src="./public/project/portfolioSite/portfolioMain.gif"/>
 </a>
 
