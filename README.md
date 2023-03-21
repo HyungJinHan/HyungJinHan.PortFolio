@@ -2,7 +2,7 @@
 
 <div align='center'>
 
-<a href='https://hyungjinhan.vercel.app/' target="_blank">
+<a href='https://hyungjinhan-portfolio-hyungjinhan.vercel.app/' target="_blank">
 <img width='70%' src="./public/project/portfolioSite/portfolioMain.gif"/>
 </a>
 
